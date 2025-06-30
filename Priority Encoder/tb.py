@@ -60,5 +60,3 @@ async def test(dut):
     else:
         logging.info('All test cases passed')
     print('--------------------------------------------------------')
-
-    print(a.is_resolvable)
