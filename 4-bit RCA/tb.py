@@ -45,6 +45,11 @@ async def test(dut):
             else:
                 print('Test passed :', sout + 16, '@', str(get_sim_time(units='ns'))) 
                    
+        '''
+        sum = cout,sum[3:0]
+        if : cout = 0    sum = sum [3:0] = a+b+cin
+        if : cout = 1    sum = 1, sum [3:0] = 16+a+b+cin
+        '''
         await Timer(10, 'ns')
        
     print('--------------------------------------------------------')
